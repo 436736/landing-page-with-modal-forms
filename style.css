@@ -73,9 +73,82 @@ html {
 .btn-signup:hover {
   transform: translateY(-2px);
 }
-.btn-login:active{
+.btn-login:active {
   transform: translateY(0);
 }
-.btn-signup:active{
+.btn-signup:active {
   transform: translateY(0);
+}
+.modal {
+  width: 40rem;
+  height: 25rem;
+  position: absolute;
+  top: 70%;
+  right: 50%;
+  background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.6) 0%,
+      rgba(116, 48, 16, 0.5) 35%,
+      rgba(0, 212, 255, 0.7) 100%
+    ),
+    url(./images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.x-btn {
+  color: #fff;
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+.form-header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-control {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-header h1 {
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+}
+.form-header h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.input-group {
+  display: flex;
+  justify-items: center;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+.input-group i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+.btn-signup-form {
+  width: 10rem;
+  border-radius: 5rem;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 2rem;
+  background-color: tomato;
+  border: 0.1rem solid tomato;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
